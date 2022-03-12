@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Lesson1 from './components/Lesson1';
+// import Lesson1 from './components/Lesson1';
 import reportWebVitals from './reportWebVitals';
+import ReactFacts24 from './components/ReactFacts24';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Lesson1 />
+    {/* <Lesson1 /> */}
+    <ReactFacts24 />
   </React.StrictMode>,
   document.getElementById('root'),
 );
