@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import Lesson1 from './components/Lesson1';
 import reportWebVitals from './reportWebVitals';
-import ReactFacts24 from './components/ReactFacts24';
+// import ReactFacts24 from './components/ReactFacts24';
+import Airbnb from './components/airbnb/Airbnb';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Lesson1 /> */}
-    <ReactFacts24 />
+    {/* <ReactFacts24 /> */}
+    <Airbnb />
   </React.StrictMode>,
   document.getElementById('root'),
 );
