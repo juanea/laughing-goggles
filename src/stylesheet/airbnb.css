@@ -21,11 +21,11 @@ nav {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.gray{
-  color: #918E9B
+.gray {
+  color: #918e9b;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
@@ -56,24 +56,24 @@ nav {
   max-width: 320px;
 }
 
-.card{
+.card {
   width: 176px;
   margin-left: 37px;
   margin-top: 49px;
   font-size: 12px;
 }
 
-.card--image{
+.card--image {
   width: 100%;
   border-radius: 9px;
 }
 
-.card--stats{
+.card--stats {
   display: flex;
   align-items: center;
 }
 
-.card--star{
+.card--star {
   width: 14px;
   margin-top: 9px;
 }

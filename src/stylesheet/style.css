@@ -51,7 +51,7 @@ main {
   color: white;
   background-image: url(../assets/react-icon-large.png);
   background-repeat: no-repeat;
-  background-position: right 75%; 
+  background-position: right 75%;
 }
 
 .main--content {

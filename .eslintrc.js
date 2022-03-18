@@ -3,7 +3,13 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'airbnb/hooks'],
+  extends: [
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'airbnb',
+    'airbnb/hooks',
+    'prettier',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
