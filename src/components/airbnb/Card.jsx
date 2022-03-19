@@ -1,21 +1,26 @@
 import React from 'react';
 import '../../stylesheet/airbnb.css';
 import PropTypes from 'prop-types';
-import CARDIMAGE from '../../assets/airbnb/katie-zaferes.png';
 import CARDSTAR from '../../assets/airbnb/star.png';
 
-export default function Card({ name, rating, reviewCount, country, price }) {
+export default function Card({
+  img,
+  rating,
+  reviewCount,
+  country,
+  title,
+  price,
+}) {
   return (
     <div className="card">
-      <img src={CARDIMAGE} className="card--image" alt="Card" />
+      <img src={img} className="card--image" alt="Card" />
       <div className="card--stats">
         <img src={CARDSTAR} className="card--star" alt="Star" />
         <span>{rating}</span>
         <span className="gray">({reviewCount}) • </span>
         <span className="gray">{country}</span>
       </div>
-      <p>Life Lessons with</p>
-      <p>{name}</p>
+      <p>{title}</p>
       <p>
         <span className="bold">From ${price}</span>/ person
       </p>
@@ -24,17 +29,19 @@ export default function Card({ name, rating, reviewCount, country, price }) {
 }
 
 Card.propTypes = {
-  name: PropTypes.string,
+  img: PropTypes.string,
   rating: PropTypes.number,
   reviewCount: PropTypes.number,
   country: PropTypes.string,
+  title: PropTypes.string,
   price: PropTypes.number,
 };
 
 Card.defaultProps = {
-  name: 'John Doe',
+  img: 'img',
   rating: '4.8',
   reviewCount: '100',
   country: 'IS',
+  title: 'AirBnb Experiences',
   price: '100',
 };
