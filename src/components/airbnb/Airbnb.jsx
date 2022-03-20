@@ -2,24 +2,26 @@ import React from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Card from './Card';
-import katieZaferes from '../../assets/airbnb/katie-zaferes.png';
-// import weddingPhoto from '../../assets/airbnb/wedding-photography.png';
-// import mountainBike from '../../assets/airbnb/mountain-bike.png';
+import data from './data';
 
 export default function Airbnb() {
+  const cards = data.map((item) => (
+    <Card
+      img={item.coverImg}
+      rating={item.stats.rating}
+      reviewCount={item.stats.reviewCount}
+      location={item.location}
+      title={item.title}
+      price={item.price}
+      openSpots={item.openSpots}
+    />
+  ));
+
   return (
     <div>
       <Navbar />
       <Hero />
-      <Card
-        img={katieZaferes}
-        name="Katie Zafares"
-        rating={5.0}
-        reviewCount="6"
-        country="USA"
-        title="Life Lessons with Katie Zafares"
-        price={136}
-      />
+      {cards}
     </div>
   );
 }
