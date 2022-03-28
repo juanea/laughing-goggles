@@ -11,7 +11,7 @@ export default function Airbnb() {
     <div>
       <Navbar />
       <Hero />
-      {cards}
+      <section className="cards-list">{cards}</section>
     </div>
   );
 }
