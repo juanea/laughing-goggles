@@ -4,13 +4,15 @@ import './index.css';
 // import Lesson1 from './components/Lesson1';
 import reportWebVitals from './reportWebVitals';
 // import ReactFacts24 from './components/ReactFacts24';
-import Airbnb from './components/airbnb/Airbnb';
+// import Airbnb from './components/airbnb/Airbnb';
+import TravelJournal from './components/TravelJournal/TravelJournal';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Lesson1 /> */}
     {/* <ReactFacts24 /> */}
-    <Airbnb />
+    {/* <Airbnb /> */}
+    <TravelJournal />
   </React.StrictMode>,
   document.getElementById('root')
 );

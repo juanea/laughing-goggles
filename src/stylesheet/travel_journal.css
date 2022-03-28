@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  background-color: #282d35;
+}
+
+.header--background {
+  background-color: #f55a5a;
+  height: 55px;
+}
+
+.header--list > li{
+  padding: 10px;
+}
+
+.header--logo{
+  height: 24px;
+  width: 24px;
+  padding: 16px 0;
+  margin-left: 213px;
+}
+
+.header--title {
+  color: white;
+  letter-spacing: -0.075em;
+  padding: 20px;
+  text-align: center;
+  margin-left: 7px;
+}
