@@ -6,7 +6,11 @@
   "runArgs": ["-u", "node"],
   "settings": {
     "workbench.colorTheme": "Cobalt2",
-    "terminal.integrated.automationShell.linux": "/bin/bash"
+    "terminal.integrated.automationProfile.linux": {
+      "bash": {
+        "path": "/bin/bash",
+      }
+    }
   },
   "postCreateCommand": "npm install",
   "extensions": [

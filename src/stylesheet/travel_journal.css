@@ -8,23 +8,22 @@ body {
 .header--background {
   background-color: #f55a5a;
   height: 55px;
+  display: flex;
 }
 
-.header--list > li{
-  padding: 10px;
-}
-
-.header--logo{
+.header--logo {
   height: 24px;
   width: 24px;
-  padding: 16px 0;
-  margin-left: 213px;
+  position: relative;
+  left: 213px;
+  top: 16px;
 }
 
 .header--title {
   color: white;
   letter-spacing: -0.075em;
-  padding: 20px;
-  text-align: center;
-  margin-left: 7px;
+  margin: 0;
+  position: relative;
+  left: calc(213px + 7px);
+  top: 20px;
 }
