@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Inter, sans-serif;
   font-style: normal;
-  background-color: #282d35;
+  background-color: white;
 }
 
 .header--background {
@@ -26,4 +26,21 @@ body {
   position: relative;
   left: calc(213px + 7px);
   top: 20px;
+}
+
+.tile--location {}
+
+.tile--googleMapsUrl {}
+
+.tile--title {}
+
+.tile--dates {}
+
+.tile--description {}
+
+.tile--imageUrl {
+  width: 100%;
+  height: 125px;
+  object-fit: contain;
+  left: 39px;
 }
