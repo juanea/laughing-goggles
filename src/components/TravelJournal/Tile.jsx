@@ -4,19 +4,27 @@ import '../../stylesheet/travel_journal.css';
 export default function Tile(props) {
   return (
     <div className="tile">
-      <div className="tile--location">{props.item.location}</div>
-      <a className="tile--googleMapsUrl" href={props.item.googleMapsUrl}>
-        View on Google Maps!
-      </a>
-      <div className="tile--title">{props.item.title}</div>
-      <div className="tile--dates">{props.item.startDate}</div>
-      <div className="tile--dates">{props.item.endDate}</div>
-      <div className="tile--description">{props.item.description}</div>
-      <img
-        className="tile--imageUrl"
-        src={props.item.imageUrl}
-        alt={props.item.title}
-      />
+      <nav className="tile--nav">
+        <div className="tile--card">
+          <img
+            className="tile--imageUrl"
+            src={props.item.imageUrl}
+            alt={props.item.title}
+          />
+        </div>
+        <ul className="tile--items">
+          <li className="tile--location">
+            {props.item.location}
+            <a className="tile--googleMapsUrl" href={props.item.googleMapsUrl}>
+              View on Google Maps!
+            </a>
+          </li>
+          <li className="tile--title">{props.item.title}</li>
+          <li className="tile--dates">{props.item.startDate}</li>
+          <li className="tile--dates">{props.item.endDate}</li>
+          <li className="tile--description">{props.item.description}</li>
+        </ul>
+      </nav>
     </div>
   );
 }
