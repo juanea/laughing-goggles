@@ -1,7 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: Inter, sans-serif;
   font-style: normal;
+  font-weight: 400;
   background-color: white;
 }
 
@@ -32,36 +38,101 @@ body {
   height: calc(45px - 36px);
 }
 
+.tile {
+  height: calc(168px + 36px);
+  width: calc(550px - 40px - 40px);
+  position: relative;
+  left: 40px;
+  top: calc(45px - 18px);
+}
 .tile--nav {
   display: flex;
-  align-items: center;
+  height: inherit;
+  width: inherit;
 }
 
 .tile--items {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 19px;
+  padding-top: calc(36px / 2);
 }
-.tile--location {}
+.tile--locationProperties {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 19px;
+}
 
-.tile--googleMapsUrl {}
+.tile--location {
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  color: #2b283a;
+  position: relative;
+  left: 4px;
+}
 
-.tile--title {}
+.tile--googleMapsUrl {
+  font-size: 10.24px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #918e9b;
+  position: relative;
+  left: 16px;
+}
 
-.tile--dates {}
+.tile--title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2b283a;
+  position: relative;
+  top: calc(10.24px + 7px);
+}
+
+.tile--dates {
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #2b283a;
+  position: relative;
+  top: calc(25px + 14px);
+}
 
 .tile--description {
+  font-size: 11px;
+  color: #2b283a;
   width: 326px;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  top: 50px;
 }
 
 .tile--card {
   width: 125px;
   height: 168px;
   position: relative;
-  left: 40px;
-  top: 36px;
-}
+  left: 0px;
+  top: calc(36px / 2);
+  }
+  
+  .tile--pinicon {
+    position: relative;
+  }
 .tile--imageUrl {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+.tile--spacer {
+  position: relative;
+  width: 478px;
+  height: 0px;
+  border: 1px solid #F5F5F5;
 }

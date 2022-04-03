@@ -9,7 +9,6 @@ export default function TravelJournal() {
   return (
     <div>
       <Header />
-      <div className="header--spaceTile" />
       <section className="card--list">{locations}</section>
     </div>
   );
