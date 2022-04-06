@@ -6,16 +6,12 @@
   "runArgs": ["-u", "node"],
   "settings": {
     "workbench.colorTheme": "Cobalt2",
-    "terminal.integrated.automationProfile.linux": {
-      "bash": {
-        "path": "/bin/bash",
-      }
-    }
   },
   "postCreateCommand": "npm install",
   "extensions": [
     "esbenp.prettier-vscode",
     "wesbos.theme-cobalt2",
     "dsznajder.es7-react-js-snippets"
+    "mutantdino.resourcemonitor"
   ]
 }
