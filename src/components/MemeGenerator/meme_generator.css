@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 36px;
+}
+
+.header--background {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 20px;
+}
+
+.header--logo {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header--header {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--course {
+  font-size: 0.75rem;
+  margin-right: auto;
+}

@@ -6,7 +6,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import ReactFacts24 from './components/ReactFacts24';
 // import Airbnb from './components/airbnb/Airbnb';
-import TravelJournal from './components/TravelJournal/TravelJournal';
+// import TravelJournal from './components/TravelJournal/TravelJournal';
+import MemeGenerator from './components/MemeGenerator/MemeGenerator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -14,7 +15,8 @@ root.render(
   // <Lesson1 /> */}
   // <ReactFacts24 /> */}
   // <Airbnb /> */}
-  <TravelJournal />
+  // <TravelJournal />
+  <MemeGenerator />
 );
 
 // If you want to start measuring performance in your app, pass a function
